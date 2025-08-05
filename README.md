@@ -58,7 +58,7 @@ Para fazermos as migrações utilizamos o seguinte comando no Terminal:
 
 	python3 manage.py migrate
 
-## Suba a aplicação Django para o servidor WEB
+## Suba a aplicação Django para o servidor WEB.
 
 Para subir uma aplicação Django usamos o seguinte comando:
 

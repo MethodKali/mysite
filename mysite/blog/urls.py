@@ -1,7 +1,8 @@
 from django.urls import path
-from blog.view import PostDetail, PostView
+from blog import view
 
 urlpatterns = [
-    path('', PostView.as_view(), name='home'),
-    path('<slug:slug>/', PostDetail.as_view(), name='post_detail')
+    path('', view.PostView.as_view(), name='home'),
+#    path('<slug:slug>/', PostDetail.as_view(), name='post_detail')
+    path('<slug:slug>/', view.post_detail, name='post_detail'),
 ]
